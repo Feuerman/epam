@@ -1,0 +1,19 @@
+{
+  "name": "projects",
+  "version": "0.0.0",
+  "authors": [
+    "Insayt <valerymarkunin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*"
+  }
+}
