@@ -1,6 +1,6 @@
 ﻿events.addProduct = function() {
 	$.ajax({
-		url: './build/templates/formProduct.html',
+		url: '/epam-test/build/templates/formProduct.html',
 		cache: true,
 		success: function (data) {
 
@@ -59,7 +59,7 @@ events.editProduct = function() {
 	var product = productsCtrl.getById(productId);
 
 	$.ajax({
-		url: './build/templates/formProduct.html',
+		url: '/epam-test/build/templates/formProduct.html',
 		cache: true,
 		success: function (data) {
 			var data = data.replace(/(?:\r\n|\r|\n)/g, '');
