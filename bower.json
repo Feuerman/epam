@@ -9,17 +9,20 @@
   "homepage": "https://github.com/Feuerman/epam-test",
   "ignore": [
     "**/.*",
+    "node_modules",
     "bower_components",
-    "node_modules"    
+    "test",
+    "tests"
   ],
   "dependencies": {
-    "jquery": "^2.2.3",
-    "bootstrap": "^3.3.6"    
+    "bootstrap": "^3.3.6",
+    "handlebars": "^4.0.5",
+    "jquery": "^2.2.3"
   },
-  "devDependencies": {    
+  "devDependencies": {
+    "bootstrap-notify": "^0.2.0",
     "tablesorter": "jquery.tablesorter#^2.25.8",
-    "jquery-validation": "^1.15.0",
     "bootstrap3-dialog": "^1.35.1",
-    "bootstrap-notify": "^0.2.0"  
+    "jquery-validation": "^1.15.0"
   }
 }
