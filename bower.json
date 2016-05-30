@@ -1,28 +1,25 @@
 {
-  "name": "epam-test",
+  "name": "epam",
   "description": "",
   "main": "gulpfile.js",
   "authors": [
     "Feuerman <valerymarkunin@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/Feuerman/epam-test",
+  "homepage": "https://github.com/Feuerman/epam",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "handlebars": "^4.0.5",
     "jquery": "^2.2.3"
   },
   "devDependencies": {
     "bootstrap-notify": "^0.2.0",
-    "tablesorter": "jquery.tablesorter#^2.25.8",
     "bootstrap3-dialog": "^1.35.1",
-    "jquery-validation": "^1.15.0"
+    "tablesorter": "jquery.tablesorter#^2.25.8",
+    "jquery-validation": "^1.15.0"      
   }
 }

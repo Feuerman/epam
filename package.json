@@ -1,5 +1,5 @@
 {
-  "name": "epam-test",
+  "name": "epam",
   "version": "1.0.0",
   "author": "",
   "license": "ISC",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Feuerman/epam-test.git"
+    "url": "git+https://github.com/Feuerman/epam.git"
   },
   "main": "gulpfile.js",
   "scripts": {
