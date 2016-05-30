@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html></html>
+<head></head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+<link href="bower_components/bootstrap3-dialog/dist/css/bootstrap-dialog.min.css" rel="stylesheet">
+<link rel="stylesheet" href="bower_components/bootstrap-notify/css/bootstrap-notify.css">
+<link href="bower_components/tablesorter/dist/css/theme.default.min.css" rel="stylesheet">
+<link rel="stylesheet" href="build/css/style.min.css">
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap3-dialog/dist/js/bootstrap-dialog.min.js"></script>
+<script src="bower_components/bootstrap-notify/js/bootstrap-notify.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
+<script src="bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="bower_components/jquery-validation/src/localization/messages_ru.js"></script>
+<script src="bower_components/tablesorter/dist/js/jquery.tablesorter.min.js"></script>
+<script src="bower_components/tablesorter/dist/js/jquery.tablesorter.widgets.min.js"></script>
+<script src="bower_components/tablesorter/dist/js/extras/jquery.tablesorter.pager.min.js"></script>
+<script src="build/js/app.min.js"></script>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-xs-9">
+        <div class="input-group">
+          <input type="text" placeholder="Search..." class="form-control search"><span class="input-group-btn">
+            <button type="button" class="btn btn-primary search">Search</button>
+            <button type="button" class="btn btn-primary showAll">All products</button></span>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-3">
+        <button type="button" class="btn btn-primary pull-right add">Add new</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="table table-bordered products-table tablesorter">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Count</th>
+              <th>Price</th>
+              <th style="width:100px; text-align:center;">Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="notification"></div>
+  </div>
+</body>

@@ -1,197 +1,54 @@
 doctype html
-html.no-js
+html
 head
-    meta(charset='utf-8')
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")    
-    link(rel="stylesheet" href="css/normalize.css")
-    link(rel="stylesheet" href="css/main.css")
-    link(rel="stylesheet" href="js/partials/slick/slick.css")
+meta(charset='utf-8')
+meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css")
+link(rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css")
+
+link(href="bower_components/bootstrap3-dialog/dist/css/bootstrap-dialog.min.css" rel="stylesheet")
+link(rel="stylesheet" href="bower_components/bootstrap-notify/css/bootstrap-notify.css")
+
+link(href="bower_components/tablesorter/dist/css/theme.default.min.css" rel="stylesheet")
+
+link(rel="stylesheet" href="build/css/style.min.css")
+
+
+script(src="bower_components/jquery/dist/jquery.min.js")
+
+script(src="bower_components/bootstrap/dist/js/bootstrap.min.js")
+script(src="bower_components/bootstrap3-dialog/dist/js/bootstrap-dialog.min.js")
+script(src="bower_components/bootstrap-notify/js/bootstrap-notify.js")
+
+script(src="bower_components/handlebars/handlebars.js")
+
+script(src="bower_components/jquery-validation/dist/jquery.validate.min.js")
+script(src="bower_components/jquery-validation/src/localization/messages_ru.js")
+
+script(src="bower_components/tablesorter/dist/js/jquery.tablesorter.min.js")
+script(src="bower_components/tablesorter/dist/js/jquery.tablesorter.widgets.min.js")
+script(src="bower_components/tablesorter/dist/js/extras/jquery.tablesorter.pager.min.js")
+script(src="build/js/app.min.js")
 body
-    header
-        .header-info
-            div
-                a(href="mailto:info@veselotut.ru") info@veselotut.ru
-            div.header-info-phone
-                p
-                    span (846) 
-                    | 225 35 38
-            div.header-info-callback
-                p ЗАКАЖИТЕ ЗВОНОК:
-                form
-                    input(type="text" placeholder="Введите свой номер" name="telephone" id="phone")
-                    input(type="submit" class="submit" value="Заказать")
-        .header-logo
-            p АРТ-ШОУ ХАЗОВА СЕРГЕЯ
-            span Организация и проведение праздников. Фотосъемка и видеосъемка.
-            img(src="http://new.veselotut.ru/assets/templates/veselotut/images/logo.png", alt="Праздничное агентство «ВеселоТут»")
-    nav
-        ul
-            li
-                a(href="/") Главная
-            li
-                a(href="/") Галерея
-            li
-                a(href="/") Фотоотчет
-            li
-                a(href="/") Отзывы
-            li
-                a(href="/") Цены
-            li
-                a(href="/") Акции
-            li
-                a(href="/") Контакты
-        button.order ЗАКАЗАТЬ МЕРОПРИЯТИЕ
-    main
-        section.col-left
-            .side-menu
-                ul
-                    li
-                        a.top-level(href="/") Ведущий на ваш праздник
-                        ul
-                            li
-                                a(href="/") Свадьба
-                            li
-                                a(href="/") Годовщина свадьбы
-                                ul
-                                    li
-                                        a(href="/") фарфоровая
-                                    li
-                                        a(href="/") золотая
-                            li
-                                a(href="/") День рождения
-                            li
-                                a(href="/") Дни рождения у взрослых
-                            li
-                                a(href="/") Юбилей
-                            li
-                                a(href="/") Детский праздник
-                            li
-                                a(href="/") Выпускной вечер 
-                                ul
-                                    li
-                                        a(href="/") в детском саду
-                                    li
-                                        a(href="/") в 4 классе  
-                                    li
-                                        a(href="/") в 9 классе  
-                                    li
-                                        a(href="/") в 11 классе
-                            li
-                                a(href="/") Праздник для летних школьных лагерей 
-                            li
-                                a(href="/") Спортивный праздник 
-                            li
-                                a(href="/") Праздник на открытом воздухе
-                            li
-                                a(href="/") Корпоративный праздник
-                            li
-                                a(href="/") Профессиональный праздник
-                            li
-                                a(href="/") Открытие или годовщина компании
-                            li
-                                a(href="/") Календарный праздник 
-                                ul
-                                    li
-                                        a(href="/") Новый год
-                                    li
-                                        a(href="/") 8 марта
-                                    li
-                                        a(href="/") 23 февраля
-                                    li
-                                        a(href="/") День святого Валентина
-                    li
-                        a.top-level(href="/") Дополнительные услуги
-                        ul
-                            li
-                                a(href="/") Певец на праздник
-                    li
-                        a.top-level(href="/") Рекомендуем
-                        ul
-                            li
-                                a(href="/") Вопрос-ответ
-                            li
-                                a(href="/") Полезные советы
-            .reviews
-                .reviews-head Отзывы
-                .reviews-title
-                    div
-                        img(src="http://new.veselotut.ru/assets/templates/veselotut/images/avatar.png", alt="")
-                    div
-                        p ТМК
-                        span 21.03.2016
-                .reviews-desc
-                    p До сих пор сохраняются радостные воспоминания о встрече Нового 2016 года!Большая заслуга в этом Сергея Хазова. Было очень весело.Хочется отметить интеллигентный вид ведущего, замечательное исполнение песен Сергеем,прекрасный подбор музыки,интеллектуальные…
-                .reviews-link
-                    a(href="/") подробнее..
-        section.col-right
-            p 123   
-    main
-        img(src="http://new.veselotut.ru/assets/images/hazov-main.jpg", alt="") 
-        .main-content
-            img(src="http://new.veselotut.ru/assets/gallery/cache/big/small/90_small.jpg" class="img_style_hor" title="Оформление тканями" alt="Услуги по оформлению тканями и лентами праздничных торжественных мероприятий")
-            p С 1994 года на рынке Event-услуг успешно развивается и конкурирует с самыми успешными компаниями в этой сфере   агентство «Арт-Шоу Хазова Сергея».
-            p Компания оказывает услуги по профессиональной организации и проведению торжеств. «Арт-Шоу Хазова Сергея» имеет свой постоянный штат квалифицированных сотрудников и богатую материально техническую базу.
-            p 
-                | Агентству по плечу организация мероприятий любой сложности и смысловой направленности: 
-                a(href="/organizacija-prazdnikov/svadba") свадьбы
-                | , 
-                a(href="/organizacija-prazdnikov/provedenie-jubileja") юбилеи
-                | , 
-                a(href="/organizacija-prazdnikov/detskij-provedenie") детские
-                | , 
-                a(href="/organizacija-prazdnikov/narodnye-guljanija") корпоративные праздники
-                | , 
-                a(href="/organizacija-prazdnikov/sportivnyj-prazdnik") спортивные 
-                | и городские мероприятия, народные гулянья.
-            .hidden-content
-                .title
-                    span Показать полностью
-                .text
-                p Ведущий – лицо компании! Именно он создаёт впечатление в глазах клиентов! Именно он может влиять на ситуацию! Именно он – есть компания в глазах окружающих. Именно его именем и называется наше агентство. Итак, мы рады представить вам агентство «Арт-Шоу Хазова Сергея».
-                h2 Коротко о наших праздничных услугах
-                ul
-                    li
-                        a(href="/uslugi/tamada-na-svadbu" title="Услуги тамады") Ведущий (тамада). 
-                        | Хазов Сергей – профессиональный ведущий торжеств, вокалист, иллюзионист.
-                    li
-                        a(href="/uslugi/provedenie-svadebnoj-diskoteki" title="Свадебная дискотека") Дискотека. 
-                        | Профессиональная мощная аппаратура (до 6 Квт), светомузыкальные, лазерные установки, генераторы мыльных пузырей и дыма, караоке.
-                    li
-                        a(href="/uslugi/videosemka-svadeb-vypusknyh" title="Свадебная видеосъемка") Видеосъёмка 
-                        | – Full HD или DV, (компьютерный монтаж фильма, создание клипов и роликов).
-                    li
-                        a(href="/uslugi/fotosemka-svadeb" title="Свадебная фотосъемка") Фотосъёмка 
-                        | – создание коллажей, виньеток и альбомов.
-                    li
-                        a(href="/uslugi/kompjuternyj-montazh-materiala" title="Компьютерный монтаж видео") Компьютерный монтаж 
-                        | вашего материала.
-                    li
-                        a(href="/uslugi/zapis-dvd-ocifrovka-kasset" title="Оцифровка видеокассет") Запись DVD, перевод VHS на DVD (оцифровка).
-                    li
-                        a(href="/uslugi/svadebnaja-shou-programma" title="Организация шоу-программ") Шоу-программы.
-                    li
-                        a(href="/uslugi/artist-na-prazdnik" title="Подбор артистов") Подбор артистов разных жанров.
-                    li
-                        a(href="/uslugi/oformlenie-zala-svadba" title="Услуги по оформлению зала") Оформление зала.
-            h3 Диплом ведущего
-                .gal-item-active
-                        a(href="http://new.veselotut.ru/assets/templates/veselotut/images/Diplom_vedushhego_Hazov_Sergej.jpg" rel="colorbox")
-                            img(src="http://new.veselotut.ru/assets/templates/veselotut/images/Diplom_vedushhego_Hazov_Sergej.png" original="http://new.veselotut.ru/assets/templates/veselotut/images/Diplom_vedushhego_Hazov_Sergej.jpg" title="Диплом Хазова Сергея" alt="Документ, подтверждающий квалификацию Сергея Хазова на предоставление услуг тамады на свадебное торжество")
-                        a(href="http://new.veselotut.ru/assets/images/sert2.jpg" rel="colorbox")
-                            img(src="http://new.veselotut.ru/assets/images/sert2.jpg" original="http://new.veselotut.ru/assets/images/sert2.jpg" title="Диплом ведущего" alt="Документ, подтверждающий квалификацию Сергея Хазова на предоставление услуг тамады на свадебное торжество")
-                        a(href="http://new.veselotut.ru/assets/images/sertificat-10.png" rel="colorbox")
-                            img(class="" src="http://new.veselotut.ru/assets/images/sertificat-10.png" original="http://new.veselotut.ru/assets/images/sertificat-10.png" title="Сертификат ведущего" alt="")
-    footer
-        .copyright
-            p.copyright-title Сергей Хазов
-            p © 1994 – 2016 Праздничное агентство «Арт-Шоу Хазова Сергея» — услуги праздничного агентства в Самаре. Все права защищены.
-            .favicon
-                img(src="http://new.veselotut.ru/assets/templates/veselotut/images/favicon-logo.png", alt="")
-                a(href="http://www.favicon-media.ru") Развитие и продвижение сайтов
-        .social
-            a.social-vk(href="http://vk.com/organizacija_prazdnikov_svadeb")
-            a.social-ok(href="http://ok.ru/group/53502339580142")
-        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
-        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
-        script(src="js/partials/slick/slick.js")
-        script(src="js/partials/main.js")
+	.container
+		.row
+			.col-sm-8.col-xs-9
+				.input-group
+					input.form-control.search(type="text" placeholder="Search...")
+					span.input-group-btn
+							button.btn.btn-primary.search(type="button") Search
+							button.btn.btn-primary.showAll(type="button") All products
+			.col-sm-4.col-xs-3
+				button.btn.btn-primary.pull-right.add(type="button") Add new
+		.row
+			.col-sm-12
+				table.table.table-bordered.products-table.tablesorter
+					thead
+						tr
+							th Name
+							th Count
+							th Price
+							th(style="width:100px; text-align:center;") Actions
+					tbody
+		.notification
