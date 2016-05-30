@@ -17,6 +17,10 @@
     "gulp-concat": "^2.6.0",
     "rimraf": "^2.4.3"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feuerman/epam-test.git"
+  },
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
